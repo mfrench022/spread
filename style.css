@@ -1,0 +1,42 @@
+:root {
+	background-color: rgb(245, 245, 245);
+	font-size: 120%;
+	font-family: Baskerville;
+	line-height: 101%;
+
+	--spacing: 2rem;
+}
+
+@media (width > 600px) {
+	:root {
+		font-size: 300%;
+	}
+
+	body {
+		background: #2e77ff;
+		background: linear-gradient(118deg, rgba(46, 119, 255, 1) 0%, rgba(250, 210, 250, 1) 42%, rgba(220, 189, 255, 1) 100%);
+		color: rgb(245, 245, 245);
+	}
+
+}
+
+body {
+	padding: var(--spacing);
+}
+
+header {
+	font-weight: bold;
+}
+
+blockquote {
+	margin-inline: var(--spacing);
+	margin-block: var(--spacing);
+}
+
+p {
+	margin-block-end: var(--spacing);
+}
+
+
+
+
