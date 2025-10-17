@@ -14,10 +14,9 @@
 
 	body {
 		background: #2e77ff;
-		background: linear-gradient(118deg, rgba(46, 119, 255, 1) 0%, rgba(250, 210, 250, 1) 42%, rgba(220, 189, 255, 1) 100%);
+		background: linear-gradient(0deg, rgba(46, 119, 255, 1) 0%, rgba(255, 135, 255, 1) 51%, rgba(220, 189, 255, 1) 100%);
 		color: rgb(245, 245, 245);
 	}
-
 }
 
 body {
