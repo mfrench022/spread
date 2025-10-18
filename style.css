@@ -1,7 +1,7 @@
 :root {
 	background-color: rgb(245, 245, 245);
 	font-size: 120%;
-	font-family: Baskerville;
+	/* font-family: Baskerville; */
 	line-height: 120%;
 
 	--spacing: 2rem;
@@ -13,9 +13,9 @@
 	}
 
 	body {
-		background: #2e77ff;
-		background: linear-gradient(0deg, rgba(46, 119, 255, 1) 0%, rgba(255, 135, 255, 1) 51%, rgba(220, 189, 255, 1) 100%);
-		color: rgb(245, 245, 245);
+		/* background: #2e77ff;
+		background: linear-gradient(0deg, rgba(46, 119, 255, 1) 0%, rgba(255, 135, 255, 1) 51%, rgba(220, 189, 255, 1) 100%); */
+		/* color: rgb(245, 245, 245); */
 	}
 }
 
