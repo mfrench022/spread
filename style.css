@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
 	background-color: rgb(245, 245, 245);
 	font-size: 120%;
-	/* font-family: Baskerville; */
 	line-height: 120%;
-
 	--spacing: 2rem;
 }
 
@@ -13,12 +13,24 @@
 	}
 }
 
-body {
-	padding: var(--spacing);
+h1 {
+	font-size: 2.7rem;
+	line-height: 3rem;
+	font-family: "arial-rounded-mt-pro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
-header {
-	font-weight: bold;
+body {
+	padding: var(--spacing);
+	font-family: inter, sans-serif;
+}
+
+header p{
+	font-family: "arial-rounded-mt-pro", sans-serif;
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 2.3rem;
 }
 
 blockquote {
@@ -29,7 +41,4 @@ blockquote {
 p {
 	margin-block-end: var(--spacing);
 }
-
-
-
 
