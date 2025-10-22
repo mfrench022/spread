@@ -33,9 +33,18 @@ header p{
 	line-height: 2.3rem;
 }
 
+header {
+	margin-block-start: calc(4 * var(--spacing));
+	margin-block-end: var(--spacing);
+}
+
 blockquote {
 	margin-inline: var(--spacing);
 	margin-block: var(--spacing);
+}
+
+blockquote p {
+	font-style: italic;
 }
 
 p {
