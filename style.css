@@ -10,7 +10,7 @@
 
 @media (width > 600px) {
 	:root {
-		font-size: 300%;
+		font-size: 200%;
 	}
 
 	.topbutton {
@@ -19,15 +19,15 @@
 }
 
 h1 {
-	font-size: 2.7rem;
-	line-height: 3rem;
+	font-size: 2.2rem;
+	line-height: 2.6rem;
 	font-family: "arial-rounded-mt-pro", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 }
 
 body {
-	padding: var(--spacing);
+	padding: calc(var(--spacing) / 2);
 	font-family: inter, sans-serif;
 }
 
