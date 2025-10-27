@@ -1,12 +1,15 @@
+/* Gradients generated via https://cssgradient.io/ */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-	background-color: rgb(245, 245, 245);
 	font-size: 100%;
 	line-height: 120%;
 	--spacing: 2rem;
 	scroll-behavior: smooth;
+	--white: rgb(238, 239, 243);
+	background-color: var(--white);
 }
 
 body {
@@ -60,15 +63,39 @@ p {
 
 .links {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	row-gap: calc(var(--spacing) / 2);
 	padding-block: var(--spacing);
 }
 
-
 a {
-	width: 48%;
+	min-height: 1.4rem;
+	border-radius: 0.4rem;
+	font-family: "Nunito", sans-serif;
+	width:100%;
+	color: var(--white);
+	align-items: center;
+	padding-inline: calc(var(--spacing) / 3);
+	justify-content: center;
+	text-align: center;
+	border-style: solid;
+	border-width: 0.1rem;
+	border-color: #092d45;
+	color: #092d45;
+	background: #87c3eb;
+	transition: 300ms ease-in-out;
+}
+
+a:hover {
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+	color: var(--white);
+	transition: 300ms ease-in-out;
+}
+
+
+
+.linkbutton {
+	width: 30%;
 	min-height: 4rem;
 	border-radius: 0.7rem;
 	font-family: "Nunito", sans-serif;
@@ -76,7 +103,7 @@ a {
 	font-size: 0.8rem;
 	line-height: 1rem;
 	padding-inline: calc(var(--spacing) / 3);
-	color: white;
+	color: var(--white);
 	display: flex;
 	align-items: center;
 	justify-content: center;
