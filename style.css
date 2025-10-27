@@ -7,8 +7,8 @@
 	--spacing: 2rem;
 	scroll-behavior: smooth;
 	--white: rgb(238, 239, 243);
-	--darkblue: #092d45;
-	--lightblue: #87c3eb;
+	--darkblue: #154361;
+	--lightblue: #addeff;
 	--black:#000000;
 	background-color: var(--white);
 }
@@ -61,6 +61,7 @@ blockquote p {
 
 p {
 	margin-block-end: var(--spacing);
+	line-height: 1.4rem;
 }
 
 .links {
@@ -90,6 +91,7 @@ a {
 a:hover {
 	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 	color: var(--white);
+	background-color: var(--darkblue);
 	transition: 300ms ease-in-out;
 }
 
