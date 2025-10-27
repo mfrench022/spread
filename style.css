@@ -50,8 +50,12 @@ header {
 }
 
 blockquote {
-	margin-inline: var(--spacing);
+	margin-inline: calc(var(--spacing)/2);
 	margin-block: var(--spacing);
+	font-family: "Nunito", sans-serif; 
+	font-size: 1.3rem;
+	font-weight: 200;
+	line-height: 1.5rem;
 }
 
 blockquote p {
