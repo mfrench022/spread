@@ -43,6 +43,7 @@ header {
 	margin-block-end: var(--spacing);
 }
 
+/* Ridge CSS style obtained from https://www.w3schools.com/css/css_border.asp */
 blockquote {
 	margin-inline: calc(var(--spacing)/2);
 	margin-block: var(--spacing);
