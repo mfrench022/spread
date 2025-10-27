@@ -9,16 +9,6 @@
 	scroll-behavior: smooth;
 }
 
-@media (width > 600px) {
-	:root {
-		font-size: 200%;
-	}
-
-	.topbutton {
-		display: none;
-	}
-}
-
 body {
 	padding: calc(var(--spacing) /1.8);
 	font-family: "Inter", sans-serif;
@@ -56,6 +46,8 @@ blockquote {
 	font-size: 1.3rem;
 	font-weight: 200;
 	line-height: 1.5rem;
+	border-inline-start: 0.2rem solid black;
+	padding-inline-start: calc(var(--spacing) / 2);
 }
 
 blockquote p {
@@ -101,6 +93,31 @@ a {
 	inset-block-end: var(--spacing);
 	width: 25%;
 	min-height: 2rem;
+}
+
+
+@media (width > 500px) {
+	:root {
+		font-size: 180%;
+	}
+
+	article p {
+		padding-inline: var(--spacing);
+		line-height: 1.4rem;
+		max-width: 58ch;
+	}
+
+	h1 {
+		padding-inline: var(--spacing);
+	}
+
+	blockquote {
+		line-height: 1.8rem;
+		margin-inline-start: 25%;
+		margin-inline-end: var(--spacing);
+	}
+
+
 }
 
 
