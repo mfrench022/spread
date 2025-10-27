@@ -113,10 +113,9 @@ a:hover {
 	min-height: 2rem;
 }
 
-
 @media (width > 500px) {
 	:root {
-		font-size: 180%;
+		font-size: 135%;
 	}
 
 	article p {
@@ -134,7 +133,12 @@ a:hover {
 		margin-inline-start: 25%;
 		margin-inline-end: var(--spacing);
 	}
+}
 
+@media (width > 1000px) {
+	:root {
+		font-size: 180%;
+	}
 
 }
 
