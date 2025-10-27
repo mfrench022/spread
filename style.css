@@ -39,7 +39,7 @@ header p{
 }
 
 header {
-	padding-block-start: calc(4 * var(--spacing));
+	padding-block-start: calc(1.5 * var(--spacing));
 	margin-block-end: var(--spacing);
 }
 
