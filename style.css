@@ -2,7 +2,7 @@
 
 :root {
 	background-color: rgb(245, 245, 245);
-	font-size: 120%;
+	font-size: 100%;
 	line-height: 120%;
 	--spacing: 2rem;
 	scroll-behavior: smooth;
@@ -27,7 +27,7 @@ h1 {
 }
 
 body {
-	padding: calc(var(--spacing) / 1.2);
+	padding: calc(var(--spacing) /1.8);
 	font-family: inter, sans-serif;
 }
 
