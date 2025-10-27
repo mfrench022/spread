@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
 	background-color: rgb(245, 245, 245);
@@ -18,24 +19,29 @@
 	}
 }
 
-h1 {
-	font-size: 2.2rem;
-	line-height: 2.6rem;
-	font-family: "arial-rounded-mt-pro", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-}
-
 body {
 	padding: calc(var(--spacing) /1.8);
-	font-family: inter, sans-serif;
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
 }
 
+h1 {
+	font-size: 2.2rem;
+	line-height: 2.4rem;
+	font-family: "Nunito", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: -0.02rem;
+}
+
+
 header p{
-	font-family: "arial-rounded-mt-pro", sans-serif;
+	font-family: "Nunito", sans-serif;
 	font-weight: 700;
 	font-size: 1.8rem;
-	line-height: 2.3rem;
+	line-height: 1.96rem;
+	letter-spacing: -0.02rem;
 }
 
 header {
@@ -68,7 +74,7 @@ a {
 	width: 48%;
 	min-height: 4rem;
 	border-radius: 0.7rem;
-	font-family: "arial-rounded-mt-pro", sans-serif;
+	font-family: "Nunito", sans-serif;
 	font-weight: 700;
 	font-size: 0.8rem;
 	line-height: 1rem;
