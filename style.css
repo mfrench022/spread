@@ -8,7 +8,7 @@
 	scroll-behavior: smooth;
 	--white: rgb(238, 239, 243);
 	--darkblue: #154361;
-	--accent: #656565;
+	--accent: #65656587;
 	--lightblue: #addeff;
 	--black:#000000;
 	background-color: var(--white);
@@ -57,7 +57,8 @@ blockquote {
 	font-weight: 200;
 	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
-	margin-block: calc(var(--spacing) * 3);
+	margin-block-start: calc(var(--spacing) * 3);
+	margin-block-end: calc(var(--spacing) * 4.5);
 	padding-block-end: calc(var(--spacing)/2);
 	line-height: 1.8rem;
 }
@@ -80,10 +81,16 @@ blockquote p {
 
 .links {
 	display: flex;
+	inset-block-start: -3rem;
+	height: 4rem;
+	/* background-color: green; */
+	position: absolute;
+	inset-inline-end: var(--spacing);
+	inset-inline-start: var(--spacing);
+	display: flex;
 	justify-content: space-between;
-	/* padding-block-start: var(--spacing); */
-	position:absolute;
-	inset-block-start: -3rem
+	inset-inline-end: 0;
+	inset-inline-start: 0;
 }
 
 a {
@@ -117,13 +124,15 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	padding-block: calc(var(--spacing) / 3);
-	font-size: 0.7rem;
+	font-size: 0.75rem;
 	line-height: 0.8rem;
-	width: 16%;
 	border-width: 0;
 	border-radius: 0.4rem 0.4rem 0rem 0rem;
 	background-color: var(--accent);
-	
+	border: 0.2rem ridge var(--black);
+	border-bottom-width: 0;
+	flex: 1;
+	width: auto;
 }
 
 .topbutton {
@@ -137,7 +146,8 @@ a:hover {
 section {
 	background-color: var(--accent);
 	border-radius: 0.4rem;
-	padding-block: var(--spacing);
+	padding-block-end: var(--spacing);
+	padding-block-start: calc(2 *var(--spacing));
 	margin-block-start: calc(6 * var(--spacing)); 
 	position:relative;
 }
@@ -170,7 +180,7 @@ section {
 blockquote {
 		margin-inline-start: 40%;
 	}
-	
+
 }
 
 
