@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-	font-size: 100%;
+	font-size: 104%;
 	line-height: 120%;
 	--spacing: 2rem;
 	scroll-behavior: smooth;
@@ -22,26 +22,37 @@ body {
 }
 
 h1 {
-	font-size: 2.2rem;
-	line-height: 2.4rem;
+	font-size: 5rem;
+	line-height: 4.8rem;
 	font-family: "Nunito", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	letter-spacing: -0.02rem;
+	letter-spacing: -0.09rem;
 }
 
+p {
+	margin-block-end: calc(1.5 * var(--spacing));
+	line-height: 1.4rem;
+}
 
 header p{
 	font-family: "Nunito", sans-serif;
 	font-weight: 700;
-	font-size: 1.8rem;
-	line-height: 1.96rem;
+	font-size: 2.5rem;
 	letter-spacing: -0.02rem;
+	line-height: 2.2rem;
 }
 
 header {
-	padding-block-start: calc(1.5 * var(--spacing));
+	margin-block-start: calc(6 * var(--spacing));
 	margin-block-end: var(--spacing);
+}
+
+#top {
+	border: 0.2rem ridge var(--black);
+	border-radius: 0.4rem;
+	padding-block: var(--spacing);
+	margin-block-start: calc(1.5 * var(--spacing));
 }
 
 /* Ridge CSS style obtained from https://www.w3schools.com/css/css_border.asp */
@@ -49,11 +60,11 @@ blockquote {
 	font-family: "Nunito", sans-serif; 
 	font-size: 1.3rem;
 	font-weight: 200;
-	line-height: 1.5rem;
 	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
-	margin: calc(var(--spacing) / 2);
+	margin-block: calc(var(--spacing) / 2);
 	padding-block-end: calc(var(--spacing)/2);
+	line-height: 1.8rem;
 }
 
 blockquote p {
@@ -69,13 +80,7 @@ blockquote p {
 	margin-block-end: calc(var(--spacing) / 2);
 	width: 100%;
 	background-color: var(--accent);
-	padding-inline: calc(var(--spacing)/2);
 	padding-block: calc(var(--spacing)/5);
-}
-
-p {
-	margin-block-end: var(--spacing);
-	line-height: 1.4rem;
 }
 
 .links {
@@ -136,8 +141,7 @@ a:hover {
 
 	article p {
 		padding-inline: var(--spacing);
-		line-height: 1.4rem;
-		max-width: 58ch;
+		max-width: 64ch;
 	}
 
 	h1 {
@@ -145,15 +149,13 @@ a:hover {
 	}
 
 	blockquote {
-		line-height: 1.8rem;
-		margin-inline-start: 25%;
-		margin-inline-end: var(--spacing);
+		margin-inline-start: 40%;
 	}
 }
 
 @media (width > 1000px) {
 	:root {
-		font-size: 180%;
+		font-size: 150%;
 	}
 
 }
