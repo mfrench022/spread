@@ -8,6 +8,7 @@
 	scroll-behavior: smooth;
 	--white: rgb(238, 239, 243);
 	--darkblue: #154361;
+	--accent: #656565;
 	--lightblue: #addeff;
 	--black:#000000;
 	background-color: var(--white);
@@ -51,13 +52,26 @@ blockquote {
 	font-size: 1.3rem;
 	font-weight: 200;
 	line-height: 1.5rem;
-	border-inline-start: 0.2rem ridge var(--black);
+	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
-	padding-inline-start: calc(var(--spacing) / 2);
+	margin: calc(var(--spacing) / 2);
 }
 
 blockquote p {
 	font-style: italic;
+	margin: 0;
+	padding: calc(var(--spacing)/2);
+
+}
+
+.quoteheader {
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.5rem;
+	margin-block-end: calc(var(--spacing) / 2);
+	width: 100%;
+	background-color: var(--accent);
+	padding: calc(var(--spacing)/2);
 }
 
 p {
