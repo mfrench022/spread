@@ -148,9 +148,7 @@ a:hover {
 		padding-inline: var(--spacing);
 	}
 
-	blockquote {
-		margin-inline-start: 40%;
-	}
+	
 }
 
 @media (width > 1000px) {
@@ -158,6 +156,10 @@ a:hover {
 		font-size: 150%;
 	}
 
+blockquote {
+		margin-inline-start: 40%;
+	}
+	
 }
 
 
