@@ -46,8 +46,6 @@ header {
 
 /* Ridge CSS style obtained from https://www.w3schools.com/css/css_border.asp */
 blockquote {
-	margin-inline: calc(var(--spacing)/2);
-	margin-block: var(--spacing);
 	font-family: "Nunito", sans-serif; 
 	font-size: 1.3rem;
 	font-weight: 200;
@@ -55,13 +53,13 @@ blockquote {
 	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
 	margin: calc(var(--spacing) / 2);
+	padding-block-end: calc(var(--spacing)/2);
 }
 
 blockquote p {
 	font-style: italic;
-	margin: 0;
-	padding: calc(var(--spacing)/2);
-
+	padding-inline: calc(var(--spacing)/2);
+	margin-block: 0;
 }
 
 .quoteheader {
@@ -71,7 +69,8 @@ blockquote p {
 	margin-block-end: calc(var(--spacing) / 2);
 	width: 100%;
 	background-color: var(--accent);
-	padding: calc(var(--spacing)/2);
+	padding-inline: calc(var(--spacing)/2);
+	padding-block: calc(var(--spacing)/5);
 }
 
 p {
