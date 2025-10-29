@@ -46,7 +46,7 @@ header p{
 #top {
 	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
-	padding-block-end: calc(2 * var(--spacing));
+	padding-block-end: calc(1.5 * var(--spacing));
 	margin-block-start: calc(1.5 * var(--spacing));
 	
 }
@@ -202,11 +202,10 @@ blockquote {
 	}
 
 	h1 {
-		font-size: 4.8rem;
-		line-height: 4.8rem;
+		font-size: 3.8rem;
+		line-height: 3.9rem;
 	}
 
-	
 
 }
 
