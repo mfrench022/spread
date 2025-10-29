@@ -17,7 +17,6 @@
 }
 
 body {
-	padding: calc(var(--spacing) /1.8);
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
@@ -52,7 +51,7 @@ header p{
 	border-radius: 0.4rem;
 	padding-block-end: calc(1.5 * var(--spacing));
 	margin-block-start: calc(1.5 * var(--spacing));
-	
+	margin-inline: calc(var(--spacing) /1.5);
 }
 
 blockquote {
@@ -62,9 +61,10 @@ blockquote {
 	border: 0.2rem solid var(--darkpink);
 	border-radius: 0.4rem;
 	margin-block-start: calc(var(--spacing) * 3);
-	margin-block-end: calc(var(--spacing) * 4.5);
+	margin-block-end: calc(var(--spacing) * 3);
 	padding-block-end: calc(var(--spacing)/2);
 	line-height: 1.8rem;
+	margin-inline: calc(var(--spacing) /1.5);
 }
 
 blockquote p {
@@ -165,6 +165,10 @@ a:hover {
 	min-height: 2rem;
 }
 
+article {
+	margin-inline: calc(var(--spacing) /1.5);
+}
+
 section {
 	background-color: var(--accent);
 	border-radius: 0rem 0rem 0.4rem 0.4rem;
@@ -193,13 +197,37 @@ h1 {
 
 
 .beginning{
-	margin-block-start: calc(-1.5 *var(--spacing));
+	margin-block-start: calc(-0.25 *var(--spacing));
+}
+
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	row-gap: calc(var(--spacing) / 2);
+	background-color: var(--pink);
+	padding-block: var(--spacing);
+	padding-inline: calc(var(--spacing) /1.5);
+	height: auto;
+	font-size: 0.75rem;
+	font-weight: 700;
+	font-family: "Nunito", sans-serif;
+	text-align: left;
+	border-block-start: 0.2rem solid var(--darkpink);
+	color: var(--black);
+}
+
+footer p {
+	line-height: 0.75rem;
+	padding: 0;
+	margin: 0;
 }
 
 @media (width > 580px) {
 	:root {
 		font-size: 135%;
-	}
+}
 
 	.links {
 		flex-direction: row;
@@ -207,12 +235,7 @@ h1 {
 }
 
 
-	.beginning{
-		margin-block-start: calc(-1.5 *var(--spacing));
-}
-
-
-header p{
+	header p{
 	font-family: "Nunito", sans-serif;
 	font-weight: 700;
 	font-size: 2.5rem;
@@ -224,16 +247,21 @@ header p{
 @media (width > 1000px) {
 	:root {
 		font-size: 150%;
-	}
+}
 
-blockquote {
+	blockquote {
 		margin-inline-start: 40%;
-	}
+}
 
 	h1 {
 		font-size: 3.8rem;
 		line-height: 3.9rem;
-	}
+}
+
+	footer {
+	flex-direction: row;
+	justify-content: space-between;
+}
 }
 
 
