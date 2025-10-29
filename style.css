@@ -47,8 +47,9 @@ header p{
 #top {
 	border: 0.2rem ridge var(--black);
 	border-radius: 0.4rem;
-	padding-block: var(--spacing);
+	padding-block-end: calc(2 * var(--spacing));
 	margin-block-start: calc(1.5 * var(--spacing));
+	
 }
 
 /* Ridge CSS style obtained from https://www.w3schools.com/css/css_border.asp */
@@ -66,7 +67,7 @@ blockquote {
 
 blockquote p {
 	font-style: italic;
-	padding-inline: calc(var(--spacing)/2);
+	padding-inline: var(--spacing);
 	margin-block: 0;
 }
 
@@ -78,6 +79,7 @@ blockquote p {
 	width: 100%;
 	background-color: var(--accent);
 	padding-block: calc(var(--spacing)/5);
+	padding-inline: var(--spacing);
 }
 
 a {
