@@ -155,7 +155,7 @@ section {
 	}
 
 
-@media (width > 500px) {
+@media (width > 580px) {
 	:root {
 		font-size: 135%;
 	}
