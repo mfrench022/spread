@@ -308,6 +308,27 @@ a:hover {
 	blockquote{
 		margin-block: var(--spacing);
 	}
+
+	article p{
+		max-width: 1000ch;
+	}
+
+	a{
+		border: none;
+		text-decoration: underline;
+		padding-inline: 0;
+
+	}
+
+	.quoteheader{
+		border-block-end: 0.2rem solid black;
+		/* padding-inline: 0;
+		margin-inline: var(--spacing); */
+	}
+
+	#top, blockquote {
+		border: none;
+	}	
 }
 
 
