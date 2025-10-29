@@ -281,5 +281,34 @@ a:hover {
 }
 }
 
+@media print {
+
+	:root {
+		font-size: 80%;
+	}
+
+	body {
+		background-color: white;
+	}
+
+	#top, section, blockquote {
+		border-color: black;
+	}
+
+	.links {
+		opacity: 0;
+		margin-block-start: calc(var(--spacing) / 4); 
+	}
+
+	section{
+		border-block-start: 0.2rem solid black;
+		border-radius: 0.4rem;
+	}
+
+	blockquote{
+		margin-block: var(--spacing);
+	}
+}
+
 
 
