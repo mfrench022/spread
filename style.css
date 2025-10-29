@@ -23,12 +23,12 @@ body {
 }
 
 h1 {
-	font-size: 5rem;
-	line-height: 4.8rem;
+	line-height: 2.2rem;
 	font-family: "Nunito", sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	letter-spacing: -0.09rem;
+	font-size: 2.2rem;
 }
 
 p {
@@ -78,20 +78,6 @@ blockquote p {
 	width: 100%;
 	background-color: var(--accent);
 	padding-block: calc(var(--spacing)/5);
-}
-
-.links {
-	display: flex;
-	inset-block-start: -3rem;
-	height: 4rem;
-	/* background-color: green; */
-	inset-inline-end: var(--spacing);
-	inset-inline-start: var(--spacing);
-	display: flex;
-	justify-content: space-between;
-	inset-inline-end: 0;
-	inset-inline-start: 0;
-	margin-block-start: calc(6 * var(--spacing)); 
 }
 
 a {
@@ -159,11 +145,6 @@ section {
 	margin-block-start: calc(-1.5 *var(--spacing));
 }
 
-@media (width > 500px) {
-	:root {
-		font-size: 135%;
-	}
-
 	article p {
 		padding-inline: var(--spacing);
 		max-width: 64ch;
@@ -172,7 +153,32 @@ section {
 	h1 {
 		padding-inline: var(--spacing);
 	}
-	
+
+
+@media (width > 500px) {
+	:root {
+		font-size: 135%;
+	}
+
+
+	.links {
+	display: flex;
+	inset-block-start: -3rem;
+	height: 4rem;
+	/* background-color: green; */
+	inset-inline-end: var(--spacing);
+	inset-inline-start: var(--spacing);
+	display: flex;
+	justify-content: space-between;
+	inset-inline-end: 0;
+	inset-inline-start: 0;
+	margin-block-start: calc(6 * var(--spacing)); 
+}
+	h1 {
+		font-size: 4.8rem;
+		line-height: 4.8rem;
+	}
+
 }
 
 @media (width > 1000px) {
@@ -183,6 +189,7 @@ section {
 blockquote {
 		margin-inline-start: 40%;
 	}
+
 
 }
 
