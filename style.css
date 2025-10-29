@@ -5,7 +5,7 @@
 	font-size: 104%;
 	line-height: 120%;
 	--spacing: 2rem;
-	--white: rgb(238, 239, 243);
+	--white: rgb(255, 255, 255);
 	--darkblue: #687eb4;
 	--accent: #b3c7f7;
 	--accent2: #dfe8fd;
@@ -14,8 +14,6 @@
 	--black:#000000;
 	--pink: #cebef6;
 	--darkpink:#957cd4;
-;
-	background-color: var(--white);
 }
 
 body {
@@ -23,6 +21,8 @@ body {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
+	background: #ffffff;
+	background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgb(210, 210, 210) 100%);
 }
 
 h1 {
@@ -71,6 +71,10 @@ blockquote p {
 	font-style: italic;
 	padding-inline: var(--spacing);
 	margin-block: 0;
+}
+
+#top, blockquote {
+	background-color: var(--white);
 }
 
 .quoteheader {
