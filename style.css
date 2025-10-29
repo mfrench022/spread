@@ -51,7 +51,7 @@ header p{
 	border-radius: 0.4rem;
 	padding-block-end: calc(1.5 * var(--spacing));
 	margin-block-start: calc(1.5 * var(--spacing));
-	margin-inline: calc(var(--spacing) /1.5);
+	margin-inline: calc(var(--spacing) /2);
 }
 
 blockquote {
@@ -64,7 +64,7 @@ blockquote {
 	margin-block-end: calc(var(--spacing) * 3);
 	padding-block-end: calc(var(--spacing)/2);
 	line-height: 1.8rem;
-	margin-inline: calc(var(--spacing) /1.5);
+	margin-inline: calc(var(--spacing) /2);
 }
 
 blockquote p {
@@ -109,28 +109,6 @@ a {
 	transition: 150ms ease-in-out;
 }
 
-/* inner shadow code obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
-a:hover {
-	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.718); */
-	background-color: var(--darkgreen);
-	transition: 150ms ease-in-out;
-	border-style: inset;
-}
-
-/* Inset CSS style obtained from https://www.w3schools.com/css/css_border.asp */
-
-.linkbutton:hover {
-	border-block-end: 0.0rem solid var(--black);
-	background-color: var(--accent);
-	border-style: outset;
-}
-
-.activelinkbutton:hover {
-	border-block-end: 0.0rem solid var(--black);
-	background-color: var(--accent);
-	border-style: outset;
-}
-
 .linkbutton, .activelinkbutton {
 	display: flex;
 	align-items: center;
@@ -150,8 +128,29 @@ a:hover {
 
 .activelinkbutton {
 	background-color: var(--accent);
-	border-style: outset
+	border-style: solid
 }
+
+/* inner shadow code obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+a:hover {
+	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.718); */
+	background-color: var(--darkgreen);
+	transition: 150ms ease-in-out;
+	border-style: solid;
+}
+
+.linkbutton:hover {
+	border-block-end: 0.0rem solid var(--black);
+	background-color: var(--accent);
+	border-style: solid;
+}
+
+.activelinkbutton:hover {
+	border-block-end: 0.0rem solid var(--black);
+	background-color: var(--accent);
+	border-style: solid;
+}
+
 
 .linkbutton {
 	border-block-end: 0.2rem solid var(--darkblue);
@@ -166,7 +165,7 @@ a:hover {
 }
 
 article {
-	margin-inline: calc(var(--spacing) /1.5);
+	margin-inline: calc(var(--spacing) /2);
 }
 
 section {
@@ -241,6 +240,24 @@ footer p {
 	font-size: 2.5rem;
 	letter-spacing: -0.02rem;
 	line-height: 2.2rem;
+}
+
+
+.activelinkbutton {
+	border-style: outset
+}
+
+a:hover {
+	border-style: inset;
+}
+
+/* Inset and outset CSS style obtained from https://www.w3schools.com/css/css_border.asp */
+.linkbutton:hover {
+	border-style: outset;
+}
+
+.activelinkbutton:hover {
+	border-style: outset;
 }
 }
 
