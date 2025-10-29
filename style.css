@@ -9,6 +9,7 @@
 	--white: rgb(238, 239, 243);
 	--darkblue: #154361;
 	--accent: #656565;
+	--accent2: #a8a8a8;
 	--lightblue: #addeff;
 	--black:#000000;
 	background-color: var(--white);
@@ -84,13 +85,13 @@ blockquote p {
 	inset-block-start: -3rem;
 	height: 4rem;
 	/* background-color: green; */
-	position: absolute;
 	inset-inline-end: var(--spacing);
 	inset-inline-start: var(--spacing);
 	display: flex;
 	justify-content: space-between;
 	inset-inline-end: 0;
 	inset-inline-start: 0;
+	margin-block-start: calc(6 * var(--spacing)); 
 }
 
 a {
@@ -119,7 +120,7 @@ a:hover {
 }
 
 
-.linkbutton {
+.linkbutton, .activelinkbutton {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -128,11 +129,15 @@ a:hover {
 	line-height: 0.8rem;
 	border-width: 0;
 	border-radius: 0.4rem 0.4rem 0rem 0rem;
-	background-color: var(--accent);
+	background-color: var(--accent2);
 	border: 0.2rem ridge var(--black);
 	border-bottom-width: 0;
 	flex: 1;
 	width: auto;
+}
+
+.activelinkbutton {
+	background-color: var(--accent);
 }
 
 .topbutton {
@@ -145,15 +150,13 @@ a:hover {
 
 section {
 	background-color: var(--accent);
-	border-radius: 0.4rem;
+	border-radius: 0rem 0rem 0.4rem 0.4rem;
 	padding-block-end: var(--spacing);
 	padding-block-start: calc(2 *var(--spacing));
-	margin-block-start: calc(6 * var(--spacing)); 
-	position:relative;
 }
 
 .beginning{
-	margin-block-start: 0;
+	margin-block-start: calc(-1.5 *var(--spacing));
 }
 
 @media (width > 500px) {
