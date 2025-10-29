@@ -6,11 +6,15 @@
 	line-height: 120%;
 	--spacing: 2rem;
 	--white: rgb(238, 239, 243);
-	--darkblue: #154361;
-	--accent: #656565;
-	--accent2: #a8a8a8;
-	--lightblue: #addeff;
+	--darkblue: #687eb4;
+	--accent: #b3c7f7;
+	--accent2: #dfe8fd;
+	--lightblue: #b9e192;
+	--darkgreen: #89ce00;
 	--black:#000000;
+	--pink: #cebef6;
+	--darkpink:#957cd4;
+;
 	background-color: var(--white);
 }
 
@@ -44,19 +48,18 @@ header p{
 }
 
 #top {
-	border: 0.2rem ridge var(--black);
+	border: 0.2rem solid var(--darkblue);
 	border-radius: 0.4rem;
 	padding-block-end: calc(1.5 * var(--spacing));
 	margin-block-start: calc(1.5 * var(--spacing));
 	
 }
 
-/* Ridge CSS style obtained from https://www.w3schools.com/css/css_border.asp */
 blockquote {
 	font-family: "Nunito", sans-serif; 
 	font-size: 1.3rem;
 	font-weight: 200;
-	border: 0.2rem ridge var(--black);
+	border: 0.2rem solid var(--darkpink);
 	border-radius: 0.4rem;
 	margin-block-start: calc(var(--spacing) * 3);
 	margin-block-end: calc(var(--spacing) * 4.5);
@@ -76,36 +79,52 @@ blockquote p {
 	font-size: 1.5rem;
 	margin-block-end: calc(var(--spacing) / 2);
 	width: 100%;
-	background-color: var(--accent);
+	background-color: var(--pink);
 	padding-block: calc(var(--spacing)/5);
 	padding-inline: var(--spacing);
+}
+
+#top .quoteheader {
+	background-color: var(--accent);
 }
 
 a {
 	min-height: 1.4rem;
 	border-radius: 0.4rem;
 	font-family: "Nunito", sans-serif;
-	color: var(--white);
+	color: var(--black);
 	align-items: center;
 	padding-inline: calc(var(--spacing) / 3);
 	justify-content: center;
 	text-align: center;
-	border-style: ridge;
+	border-style: solid;
 	border-width: 0.1rem;
-	border-color: var(--darkblue);
-	color: var(--darkblue);
+	border-color: var(--darkgreen);
 	background: var(--lightblue);
-	transition: 300ms ease-in-out;
+	transition: 150ms ease-in-out;
 }
 
 /* inner shadow code obtained from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 a:hover {
-	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.718);
-	color: var(--white);
-	background-color: var(--darkblue);
-	transition: 300ms ease-in-out;
+	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.718); */
+	background-color: var(--darkgreen);
+	transition: 150ms ease-in-out;
+	border-style: inset;
 }
 
+/* Inset CSS style obtained from https://www.w3schools.com/css/css_border.asp */
+
+.linkbutton:hover {
+	border-block-end: 0.0rem solid var(--black);
+	background-color: var(--accent);
+	border-style: outset
+}
+
+.activelinkbutton:hover {
+	border-block-end: 0.0rem solid var(--black);
+	background-color: var(--accent);
+	border-style: outset
+}
 
 .linkbutton, .activelinkbutton {
 	display: flex;
@@ -113,11 +132,12 @@ a:hover {
 	justify-content: center;
 	padding-block: calc(var(--spacing) / 3);
 	font-size: 0.75rem;
+	font-weight: 700;
 	line-height: 0.8rem;
 	border-width: 0;
 	border-radius: 0.4rem 0.4rem 0rem 0rem;
 	background-color: var(--accent2);
-	border: 0.2rem ridge var(--black);
+	border: 0.2rem solid var(--darkblue);
 	border-bottom-width: 0;
 	flex: 1;
 	width: auto;
@@ -125,6 +145,11 @@ a:hover {
 
 .activelinkbutton {
 	background-color: var(--accent);
+	border-style: outset
+}
+
+.linkbutton {
+	border-block-end: 0.2rem solid var(--darkblue);
 }
 
 .topbutton {
@@ -138,6 +163,8 @@ a:hover {
 section {
 	background-color: var(--accent);
 	border-radius: 0rem 0rem 0.4rem 0.4rem;
+	border-block-end: 0.2rem solid var(--darkblue);
+	border-inline: 0.2rem solid var(--darkblue);
 	padding-block-end: var(--spacing);
 	padding-block-start: calc(2 *var(--spacing));
 }
