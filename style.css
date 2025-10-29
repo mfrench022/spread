@@ -174,13 +174,13 @@ section {
 	padding-block-start: calc(2 *var(--spacing));
 }
 
-	article p {
-		padding-inline: var(--spacing);
-		max-width: 64ch;
-	}
+article p {
+	padding-inline: var(--spacing);
+	max-width: 64ch;
+}
 
-	h1 {
-		padding-inline: var(--spacing);
+h1 {
+	padding-inline: var(--spacing);
 	}
 
 
@@ -192,7 +192,7 @@ section {
 }
 
 
-		.beginning{
+.beginning{
 	margin-block-start: calc(-1.5 *var(--spacing));
 }
 
@@ -202,13 +202,13 @@ section {
 	}
 
 	.links {
-	flex-direction: row;
-	height: 4rem;
+		flex-direction: row;
+		height: 4rem;
 }
 
 
-		.beginning{
-	margin-block-start: calc(-1.5 *var(--spacing));
+	.beginning{
+		margin-block-start: calc(-1.5 *var(--spacing));
 }
 
 
@@ -219,9 +219,6 @@ header p{
 	letter-spacing: -0.02rem;
 	line-height: 2.2rem;
 }
-
-
-
 }
 
 @media (width > 1000px) {
@@ -237,8 +234,6 @@ blockquote {
 		font-size: 3.8rem;
 		line-height: 3.9rem;
 	}
-
-
 }
 
 
