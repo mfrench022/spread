@@ -90,6 +90,7 @@ blockquote p {
 
 #top .quoteheader {
 	background-color: var(--accent);
+	margin-block-end: calc(1.5 * var(--spacing));
 }
 
 a {
@@ -121,13 +122,13 @@ a:hover {
 .linkbutton:hover {
 	border-block-end: 0.0rem solid var(--black);
 	background-color: var(--accent);
-	border-style: outset
+	border-style: outset;
 }
 
 .activelinkbutton:hover {
 	border-block-end: 0.0rem solid var(--black);
 	background-color: var(--accent);
-	border-style: outset
+	border-style: outset;
 }
 
 .linkbutton, .activelinkbutton {
