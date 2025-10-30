@@ -315,11 +315,13 @@ a:hover {
 	}
 
 	body {
-		background-color: white;
+		background: none !important;
+		background-color: white !important;
 		padding-inline: 0.2in;
 		padding-block: 1in;
 	}
-
+	
+/* figured out how to prioritize print colors here https://developer.mozilla.org/en-US/docs/Web/CSS/important */
 	#top, section, blockquote {
 		border-color: black;
 	}
@@ -327,6 +329,11 @@ a:hover {
 	#top{
 		margin-block-start: 0;
 	}
+
+	#top .quoteheader {
+	background: none !important;
+	background-color: white !important;
+}
 
 	section {
 		border: none;
