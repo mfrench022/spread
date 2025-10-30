@@ -312,7 +312,6 @@ a:hover {
 
 	:root {
 		font-size: 12pt;
-
 	}
 
 	body {
@@ -335,6 +334,7 @@ a:hover {
 		border-radius: 0;
 		padding-block: 0;
 		margin-block-end: 1in;
+		background-color: white;
 	}	
 	
 	.beginning{
@@ -358,10 +358,12 @@ a:hover {
 		border: none;
 		text-decoration: none;
 		padding-inline: 0;
+		background-color: white;
 	}
 
 	.quoteheader{
 		border-block-end: 0.2rem solid black;
+		background-color: white;
 		/* padding-inline: 0;
 		margin-inline: var(--spacing); */
 	}
@@ -371,6 +373,7 @@ a:hover {
 		flex-direction: row;
 		justify-content: space-between;
 		padding-inline: 0;
+		background-color: white;
 	}
 }
 
