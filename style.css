@@ -14,6 +14,7 @@
 	--black:#000000;
 	--pink: #cebef6;
 	--darkpink:#957cd4;
+	--printspacing: 0.85in;
 }
 
 body {
@@ -317,10 +318,9 @@ a:hover {
 	body {
 		background: none !important;
 		background-color: white !important;
-		padding-inline: 0.2in;
-		padding-block: 1in;
+		padding-inline: calc(var(--printspacing) / 4);
 	}
-	
+
 /* figured out how to prioritize print colors here https://developer.mozilla.org/en-US/docs/Web/CSS/important */
 	#top, section, blockquote {
 		border-color: black;
@@ -340,7 +340,7 @@ a:hover {
 		border-inline-start: 0.2rem solid black;
 		border-radius: 0;
 		padding-block: 0;
-		margin-block-end: 1in;
+		margin-block-end: var(--printspacing);
 		background-color: white;
 	}	
 	
@@ -353,12 +353,13 @@ a:hover {
 	}
 
 	blockquote{
-		margin-block: 1in;
+		margin-block: var(--printspacing);
+		font-weight: 300;
 	}
 
 	article p{
 		max-width: 1000ch;
-		margin-block-end: 0.25in;
+		margin-block-end: calc(var(--printspacing) / 3);
 	}
 
 	a{
@@ -381,7 +382,17 @@ a:hover {
 		justify-content: space-between;
 		padding-inline: 0;
 		background-color: white;
+		padding-block-end: 0;
+		padding-block-start: calc(var(--printspacing) / 5)
 	}
+/* 
+	blockquote:nth-child(5) {
+		margin-block-end: calc(var(--printspacing) / 1.25);
+	} */
+}
+
+@page {
+  margin-block: var(--printspacing);
 }
 
 @media (prefers-contrast: no-preference) {
@@ -435,3 +446,4 @@ a:hover {
 	font-size: 1rem;
 }
 }
+
