@@ -191,7 +191,7 @@ h1 {
 	height: auto;
 	flex-direction: column;
 	display: flex;
-	margin-block-start: calc(6 * var(--spacing)); 
+	margin-block-start: calc(3 * var(--spacing)); 
 }
 
 
@@ -231,8 +231,8 @@ footer p {
 	.links {
 		flex-direction: row;
 		height: 4rem;
+		margin-block-start: calc(6 * var(--spacing)); 
 }
-
 
 	header p{
 	font-family: "Nunito", sans-serif;
