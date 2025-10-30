@@ -124,6 +124,7 @@ a {
 	border-bottom-width: 0;
 	flex: 1;
 	width: auto;
+	height: 4rem;
 }
 
 .activelinkbutton {
@@ -192,6 +193,7 @@ h1 {
 	flex-direction: column;
 	display: flex;
 	margin-block-start: calc(3 * var(--spacing)); 
+	padding-block-start: var(--spacing); 
 }
 
 
@@ -223,6 +225,12 @@ footer p {
 	margin: 0;
 }
 
+/* reviewed attribute selectors here: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+.links a[href="#intro"] {
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+}
+
 @media (width > 580px) {
 	:root {
 		font-size: 135%;
@@ -240,7 +248,12 @@ footer p {
 	font-size: 2.5rem;
 	letter-spacing: -0.02rem;
 	line-height: 2.2rem;
+	margin-block-start: var(--spacing);
 }
+
+	#top p {
+	margin-block-start: 0;
+	}
 
 
 .activelinkbutton {
@@ -339,14 +352,6 @@ a:hover {
 	#top, blockquote {
 		border: none;
 	}	
-}
-
-/* reviewed attribute selectors here: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
-@media (max-width: 580px) {
-	.links a[href="#intro"] {
-		border-top-left-radius: 0.4rem;
-		border-top-right-radius: 0.4rem;
-  }
 }
 
 
