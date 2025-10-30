@@ -106,7 +106,7 @@ a {
 	border-width: 0.1rem;
 	border-color: var(--darkgreen);
 	background: var(--lightblue);
-	transition: 150ms ease-in-out;
+	transition: 75ms ease-in-out;
 }
 
 .linkbutton, .activelinkbutton {
@@ -135,7 +135,7 @@ a {
 a:hover {
 	/* box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.718); */
 	background-color: var(--darkgreen);
-	transition: 150ms ease-in-out;
+	transition: 75ms ease-in-out;
 	border-style: solid;
 }
 
