@@ -248,45 +248,44 @@ footer p {
 }
 
 	header p{
-	font-family: "Nunito", sans-serif;
-	font-weight: 700;
-	font-size: 2.5rem;
-	letter-spacing: -0.02rem;
-	line-height: 2.2rem;
-	margin-block-start: var(--spacing);
+		font-family: "Nunito", sans-serif;
+		font-weight: 700;
+		font-size: 2.5rem;
+		letter-spacing: -0.02rem;
+		line-height: 2.2rem;
+		margin-block-start: var(--spacing);
 }
 
 	#top p {
-	margin-block-start: 0;
-	}
-
-
-.activelinkbutton {
-	border-style: outset;
-	border-radius: 0.4rem 0.4rem 0rem 0rem;
+		margin-block-start: 0;
 }
 
-.linkbutton{
-	border-radius: 0.4rem 0.4rem 0rem 0rem;
+
+	.activelinkbutton {
+		border-style: outset;
+		border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
-a:hover {
-	border-style: inset;
+	.linkbutton{
+		border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+
+	a:hover {
+		border-style: inset;
 }
 
 /* Inset and outset CSS style obtained from https://www.w3schools.com/css/css_border.asp */
-.linkbutton:hover {
-	border-style: outset;
+	.linkbutton:hover {
+		border-style: outset;
 }
 
-.activelinkbutton:hover {
-	border-style: outset;
+	.activelinkbutton:hover {
+		border-style: outset;
 }
 
-.beginning{
-	margin-block-start: calc(-0.25 *var(--spacing));
+	.beginning{
+		margin-block-start: calc(-0.25 *var(--spacing));
 }
-
 }
 
 @media (width > 1000px) {
@@ -331,8 +330,8 @@ a:hover {
 	}
 
 	#top .quoteheader {
-	background: none !important;
-	background-color: white !important;
+		background: none !important;
+		background-color: white !important;
 }
 
 	section {
@@ -354,7 +353,7 @@ a:hover {
 
 	blockquote{
 		margin-block: var(--printspacing);
-		font-weight: 300;
+		font-weight: 350;
 	}
 
 	article p{
@@ -385,14 +384,10 @@ a:hover {
 		padding-block-end: 0;
 		padding-block-start: calc(var(--printspacing) / 5)
 	}
-/* 
-	blockquote:nth-child(5) {
-		margin-block-end: calc(var(--printspacing) / 1.25);
-	} */
 }
 
 @page {
-  margin-block: var(--printspacing);
+	margin-block: var(--printspacing);
 }
 
 @media (prefers-contrast: no-preference) {
@@ -434,16 +429,16 @@ a:hover {
 	}
 
 	.notice {
-	position: fixed;
-	inset-block-end: calc(var(--spacing) * -1);
-	display: block;
-	text-align: center;
-	width: 100%;
-	z-index: 100;
-	font-family: "Nunito", sans-serif;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 1rem;
+		position: fixed;
+		inset-block-end: calc(var(--spacing) * -1);
+		display: block;
+		text-align: center;
+		width: 100%;
+		z-index: 100;
+		font-family: "Nunito", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+		font-size: 1rem;
 }
 }
 
