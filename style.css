@@ -118,7 +118,7 @@ a {
 	font-weight: 700;
 	line-height: 0.8rem;
 	border-width: 0;
-	border-radius: 0.4rem 0.4rem 0rem 0rem;
+	border-radius: 0rem 0rem 0rem 0rem;
 	background-color: var(--accent2);
 	border: 0.2rem solid var(--darkblue);
 	border-bottom-width: 0;
@@ -244,7 +244,12 @@ footer p {
 
 
 .activelinkbutton {
-	border-style: outset
+	border-style: outset;
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+
+.linkbutton{
+	border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
 a:hover {
@@ -259,6 +264,11 @@ a:hover {
 .activelinkbutton:hover {
 	border-style: outset;
 }
+
+.beginning{
+	margin-block-start: calc(-0.25 *var(--spacing));
+}
+
 }
 
 @media (width > 1000px) {
@@ -331,5 +341,12 @@ a:hover {
 	}	
 }
 
+/* reviewed attribute selectors here: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors */
+@media (max-width: 580px) {
+	.links a[href="#intro"] {
+		border-top-left-radius: 0.4rem;
+		border-top-right-radius: 0.4rem;
+  }
+}
 
 
